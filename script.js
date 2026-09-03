@@ -68,7 +68,7 @@ predictBtn.disabled = true;
 predictBtn.textContent = "Predicting...";
 
 try {
-    const response = await fetch(API_URL, {
+    const response = await fetch(`${API_URL}/predict`, {
         method: "POST",
         mode: "cors",
         headers: {
